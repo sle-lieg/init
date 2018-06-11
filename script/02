@@ -1,0 +1,4 @@
+#!/bin/bash
+
+apt-get update >> log.text
+apt-get upgrade >> log.text

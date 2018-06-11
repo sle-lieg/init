@@ -1,0 +1,2 @@
+1/ ps -e | grep shhd
+2/ sudo /etc/init.d/ssh status | grep PID:
