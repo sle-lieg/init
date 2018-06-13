@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -e /etc/crontab_backup ]
+then
+	cp /etc/crontab /etc/crontab_backup
+fi
+
+if [ $(md5sum /etc/crontab_backup | cut -d' ' -f1) != $(md5sum /etc/crontab | cut -d' ' -f1) ]
+then
+	echo "crontab has been modified" | mail -s "crontab alert" root
+fi

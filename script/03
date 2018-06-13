@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -eq 0 ] || [ ! -d $1 ]
+then
+	echo ./03: directory name missing
+	exit
+fi
+
+ls -S $1
