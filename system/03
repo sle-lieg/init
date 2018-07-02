@@ -1,11 +1,1 @@
-1/ copy /etc/hosts and /etc/hostname files to save them in case there is an error
-2/ replace the hostname in the /etc/hosts file
-3/ replace the hostname in the /etc/hostname file
-
-then:
-4/ restart the computer/vm
-
-or:
-4/ sudo service hostname restart
-5/ sudo service networking restart
-6/ delog and relog to your machin
+/etc/hostname

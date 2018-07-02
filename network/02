@@ -1,0 +1,4 @@
+#!/bin/bash
+
+networksetup -listallhardwareports
+ifconfig en0
